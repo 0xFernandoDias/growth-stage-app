@@ -57,6 +57,9 @@ export function GrowthStage({
 						title: {
 							display: true,
 							text: "Talhão 1",
+							font: {
+								size: 24,
+							},
 						},
 					},
 				}}

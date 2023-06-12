@@ -20,6 +20,7 @@ export default function App() {
 }
 
 function MainContent() {
+	// API call
 	const {
 		isLoading,
 		error,
@@ -46,7 +47,7 @@ function MainContent() {
 	return (
 		<div className="flex h-full w-full">
 			<div className="flex flex-col justify-center items-center w-full">
-				<div className="flex gap-4 py-8 items-center">
+				<header className="flex gap-4 py-8 items-center">
 					<svg
 						className="w-6 h-6 lg:w-9 lg:h-9"
 						fill="none"
@@ -63,7 +64,7 @@ function MainContent() {
 						/>
 					</svg>
 					<p className="md:text-4xl text-2xl text-black">Growth Stage</p>
-				</div>
+				</header>
 				<GrowthStage days={days} />
 			</div>
 		</div>
